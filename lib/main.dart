@@ -62,8 +62,47 @@ class MyApp extends StatelessWidget {
                  color: Colors.blue,
                  border: Border.all(color: Colors.black87,width: 2),
                ),
-             )
+             ),
+          Container(
+            padding: EdgeInsets.all(10),
+            margin: EdgeInsets.only(top: 10),
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              border: Border.all(color: Colors.black87,width: 2),
+            ),
+            child:Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Column(
+                  children: [
+                    const Icon(Icons.person,color: Colors.green,weight:100,),
+                    const Text("Prep"),
+                    Container(height: 10,) ,
+                    const Text("25ms"),
 
+                  ],
+                ),
+                Column(
+                  children: [
+                    const Icon(Icons.person,color: Colors.green,weight:100,),
+                    const Text("Cook"),
+                    Container(height: 10,) ,
+                    const Text("10ms"),
+
+                  ],
+                ),
+                Column(
+                  children: [
+                    const Icon(Icons.person,color: Colors.green,weight:100,),
+                    const Text("feed",style: TextStyle(fontWeight:FontWeight.bold),),
+                    Container(height: 10,) ,
+                    const Text("15ms"),
+
+                  ],
+                ),
+              ],
+            ),
+          )
            ],
          ),
        )
